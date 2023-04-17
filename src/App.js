@@ -200,10 +200,9 @@ function App() {
                           {t('H_11_sum')}
                         </p>
                       </div>
-                      <div className='d-flex align-items-center '>
-                        <p className='sect2_left_static2 row'>
+                      <div className='d-flex  '>
+                        <p className='sect2_left_static2'>
                           <span>{t("H_13")}</span>
-                        
                         <span style={{color: "black"}} className='d-flex d-sm-none'>{t("H_11_sub_sum")} </span>
                          </p><br/>
                         <p className='d-none d-sm-flex sum_right'>
@@ -233,7 +232,7 @@ function App() {
                         </p>
                       </div>
                       <div className='d-flex align-items-center'>
-                        <p className='d-flex row align-items-center sect2_left_static3 '>
+                        <p className='d-flex sect2_left_static3 '>
                           <span>{t("H_13")} </span>
                           <span style={{color:"black"}} className='d-flex d-sm-none'>{t("H_13_1")} </span>
                         
@@ -365,7 +364,7 @@ function App() {
               <div className='col-sm-6 left_side'>
                 <img className='open_woman' src={woman_2} alt="" />
               </div>
-              <div className='col-sm-6'>
+              <div className='col-sm-6 '>
                 <img className='open_mobile' src={phone} alt="" />
               </div>
             </div>
@@ -484,7 +483,7 @@ function App() {
                         className='form-control'
                         placeholder='Enter your credit card number'
                         options={{
-                          prefix: '+998()',
+                          prefix: '+998',
                           delimiters: [' ', '(', ') ', '-'],
                           blocks: [4, 0, 2, 3, 2, 2]
                         }}
