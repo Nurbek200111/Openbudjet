@@ -156,7 +156,7 @@ function App() {
                     <div data-aos="fade-right">
                       <div className='d-md-flex'>
                         <p className='me-3 m-0 text-secondary'>{t("H_8")}</p>
-                        <p className='m-0'>{t("H_9")}</p>
+                        <p className='m-0'>{t("H_9")} </p>
                       </div>
                       <div className='d-md-flex mt-3'>
                         <p className='me-3 m-0  text-secondary'>{t("H_10")}</p>
@@ -178,6 +178,14 @@ function App() {
                         <p className='me-3 m-0 text-secondary'>{t("H_10")}</p>
                         <p className='m-0'>{t("H_9_3")}</p>
                       </div>
+                      <div className='d-flex d-sm-none mt-3'>
+                        <p className='me-3 m-0 text-secondary'>{t("H_12")}</p>
+                        <p className='m-0'>{t("H_12_1")}</p>
+                      </div>
+                      <div className='d-flex d-sm-none mt-3'>
+                        <p className='me-3 m-0 text-secondary'>{t("H_11")}</p>
+                        <p className='m-0'>22%</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -192,8 +200,12 @@ function App() {
                           {t('H_11_sum')}
                         </p>
                       </div>
-                      <div className='d-flex align-items-center'>
-                        <p className='sect2_left_static2'>{t("H_13")}</p>
+                      <div className='d-flex align-items-center '>
+                        <p className='sect2_left_static2 row'>
+                          <span>{t("H_13")}</span>
+                        
+                        <span style={{color: "black"}} className='d-flex d-sm-none'>{t("H_11_sub_sum")} </span>
+                         </p><br/>
                         <p className='d-none d-sm-flex sum_right'>
                           {t('H_11_sub_sum')}
                         </p>
@@ -203,7 +215,13 @@ function App() {
                   <div className='col-6'>
                     <div className='set2_left2' data-aos="fade-up">
                       <div className='d-flex align-items-center'>
-                        <p className='sect2_left_statics'>{t("H_11")} 22%</p>
+                        <p className='d-none d-sm-flex sect2_left_statics'>{t("H_11")} 22%</p>
+                        <p className='d-none d-sm-flex sum_right'>
+                          {t('H_11_1')}
+                        </p>
+                      </div>
+                      <div className='d-flex d-sm-none align-items-center'>
+                        <p className='sect2_left_statics'>{t("H_11")} {t("H_11_1")}</p>
                         <p className='d-none d-sm-flex sum_right'>
                           {t('H_11_1')}
                         </p>
@@ -215,7 +233,11 @@ function App() {
                         </p>
                       </div>
                       <div className='d-flex align-items-center'>
-                        <p className='sect2_left_static3'>{t("H_13")}</p>
+                        <p className='d-flex row align-items-center sect2_left_static3 '>
+                          <span>{t("H_13")} </span>
+                          <span style={{color:"black"}} className='d-flex d-sm-none'>{t("H_13_1")} </span>
+                        
+                        </p>
                         <p className='d-none d-sm-flex sum_right'>
                           {t('H_13_1')}
                         </p>
